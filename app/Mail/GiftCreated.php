@@ -59,7 +59,7 @@ class GiftCreated extends Mailable
     {
         return [
             Attachment::fromPath(public_path('bellahu123-gift-4663231.jpg'))
-                ->as('bellahu123-gift-4663231.jpg')
+                ->as('cadeau-ajoute.jpg')
                 ->withMime('image/jpeg'),
         ];
     }
