@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadeau</title>
-</head>
-<body>
+@extends('layouts.app')
+
+@section('title', 'Cadeau')
+
+@section('content')
     <h1>Detail du cadeau</h1>
 
     <p><strong>Nom :</strong> {{ $gift->name }}</p>
@@ -27,5 +24,4 @@
         |
         <a href="{{ route('gifts.index') }}">Retour a la liste</a>
     </p>
-</body>
-</html>
+@endsection

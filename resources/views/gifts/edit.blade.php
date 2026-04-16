@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modifier un cadeau</title>
-</head>
-<body>
+@extends('layouts.app')
+
+@section('title', 'Modifier un cadeau')
+
+@section('content')
     <h1>Modifier un cadeau</h1>
 
     <form action="{{ route('gifts.update', $gift->id) }}" method="POST">
@@ -52,5 +49,4 @@
         |
         <a href="{{ route('gifts.index') }}">Retour a la liste</a>
     </p>
-</body>
-</html>
+@endsection

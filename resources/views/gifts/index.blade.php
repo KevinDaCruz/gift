@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liste des cadeaux</title>
-</head>
-<body>
+@extends('layouts.app')
+
+@section('title', 'Liste des cadeaux')
+
+@section('content')
     <h1>Liste des cadeaux</h1>
 
     <p>
@@ -48,5 +45,4 @@
             </tbody>
         </table>
     @endif
-</body>
-</html>
+@endsection
